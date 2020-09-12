@@ -21,11 +21,11 @@
 }
 .ufo{
     position: absolute;
-    height: 180px;
-    width: 360px;
+    height: 140px;
+    width: 280px;
     right:1vw;
     background-image: url(ufo.png);
-    bottom: 85vh;
+    bottom: 80vh;
     background-size: cover;
     animation: mountainmove linear 40s infinite;
 }
@@ -34,8 +34,8 @@ body{
 }
 .plane{
     position: absolute;
-    height: 120px;
-    width: 360px;
+    height: 80px;
+    width: 240px;
     left:30vw;
     background-image: url(plane1.png);
     background-size: cover;
