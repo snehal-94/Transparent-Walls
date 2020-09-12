@@ -21,9 +21,9 @@
 }
 .ufo{
     position: absolute;
-    height: 26vh;
-    width: 30vw;
-    right:0px;
+    height: 180px;
+    width: 360px;
+    right:1vw;
     background-image: url(ufo.png);
     bottom: 85vh;
     background-size: cover;
@@ -36,7 +36,7 @@ body{
     position: absolute;
     height: 120px;
     width: 360px;
-    left:280px;
+    left:30vw;
     background-image: url(plane1.png);
     background-size: cover;
     top: 28vh;
