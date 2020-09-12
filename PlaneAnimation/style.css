@@ -17,15 +17,25 @@
     background-image: url(mountain.png);
     top: 50vh;
     background-repeat: repeat-x;
-    animation: mountainmove linear 200s infinite;
+    animation: mountainmove linear 160s infinite;
+}
+.ufo{
+    position: absolute;
+    height: 26vh;
+    width: 30vw;
+    right:0px;
+    background-image: url(ufo.png);
+    bottom: 85vh;
+    background-size: cover;
+    animation: mountainmove linear 40s infinite;
 }
 body{
     overflow: hidden;
 }
 .plane{
     position: absolute;
-    height: 120px;
-    width: 360px;
+    height: 22vh;
+    width: 30vw;
     left:280px;
     background-image: url(plane1.png);
     background-size: cover;
