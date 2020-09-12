@@ -34,12 +34,12 @@ body{
 }
 .plane{
     position: absolute;
-    height: 22vh;
-    width: 30vw;
+    height: 120px;
+    width: 360px;
     left:280px;
     background-image: url(plane1.png);
     background-size: cover;
-    top: 20vh;
+    top: 28vh;
     animation: planeshake linear 6s infinite;
 }
 
