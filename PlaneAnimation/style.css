@@ -2,10 +2,11 @@
     margin:0;
     padding: 0;
 }
+
 .sky{
     position: absolute;
-    height: 100vh;
-    width: 800vw;
+    height: 120vh;
+    width: 2400vw;
     background-image: url(cloud.jpg);
     background-repeat: repeat-x;
     animation: skymove linear 500s infinite;
@@ -17,9 +18,9 @@
     background-image: url(mountain.png);
     top: 50vh;
     background-repeat: repeat-x;
-    animation: mountainmove linear 160s infinite;
+    animation: mountainmove linear 80s infinite;
 }
-.ufo{
+.ufo1{
     position: absolute;
     height: 140px;
     width: 280px;
@@ -27,7 +28,39 @@
     background-image: url(ufo.png);
     bottom: 80vh;
     background-size: cover;
-    animation: mountainmove linear 40s infinite;
+    animation: ufo linear 60s infinite;
+}
+.light{
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-image: url(light.png);
+    background-size: cover;
+    left: 2vw;
+    top: 4.25vh;
+    color: red;
+    text-align: center;
+    animation:spin 4s linear infinite;
+    border-radius: 100%;
+    box-shadow:
+        inset 0 0 50px rgb(235, 21, 21),
+        inset 40px 0 80px red,
+        inset -40px 0 80px blue,
+        inset 40px 0 300px red,
+        inset -40px 0 300px blue,
+          0 0 50px rgb(240, 24, 24),
+          -40px 0 60px red,
+          40px 0 60px blue;
+}
+.ufo2{
+    position: absolute;
+    height: 140px;
+    width: 280px;
+    right:1vw;
+    background-image: url(ufo.png);
+    top: 40vh;
+    background-size: cover;
+    animation: mountainmove linear 120s infinite;
 }
 body{
     overflow: hidden;
@@ -42,14 +75,30 @@ body{
     top: 28vh;
     animation: planeshake linear 6s infinite;
 }
-
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 @keyframes mountainmove
 {
     100%{
         transform: translateX(-500vw);
     }
 }
-
+@keyframes ufo
+{   
+    0%{
+        transform: rotate(-36deg);
+    
+    }
+    50%{
+        transform: rotate(36deg);
+        transform: scaleX(1.8);
+        
+    }
+    100%{
+        transform: rotate(-36deg);
+        transform: scaleX(1);
+        transform: translateX(-500vw);
+    }
+}
 @keyframes planeshake
 {
     0%{
